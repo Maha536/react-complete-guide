@@ -10,6 +10,10 @@ import NameList from './components/NameList';
 import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
 import Welcome from './components/Welcome';
+import StyleSheet from './components/StyleSheet';
+import Inline from './Inline';
+import './appStyles.css';
+import styles from './appStyles.module.css';
 
 
 class App extends Component {
@@ -17,9 +21,12 @@ class App extends Component {
     return (
       <div className="App">
         
-        <NameList></NameList>
-        
+        <Inline></Inline>
+        <h1 className='error'>Error</h1>
+        <h1 className={styles.success}>Success</h1>
          {/*
+         <StyleSheet primary={true}></StyleSheet>
+         <NameList></NameList>
          <UserGreeting></UserGreeting>
          <ParentComponent></ParentComponent>
          <EventBind/>
