@@ -15,6 +15,7 @@ import Inline from './Inline';
 import './appStyles.css';
 import styles from './appStyles.module.css';
 import Form from './components/Form';
+import LifecycleA from './components/LifecycleA';
 
 
 class App extends Component {
@@ -22,9 +23,10 @@ class App extends Component {
     return (
       <div className="App">
         
-        <Form></Form>
+        <LifecycleA/>
         
          {/*
+         <Form></Form>
          <Inline></Inline>
         <h1 className='error'>Error</h1>
         <h1 className={styles.success}>Success</h1>
