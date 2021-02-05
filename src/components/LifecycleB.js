@@ -20,6 +20,22 @@ componentDidMount(){
     console.log("Lifecycle B componentDidMount method")
 }
 
+//Updating lifecycle method
+shouldComponentUpdate(){
+    console.log("Lifecycle B shouldComponentUpdate method")
+    return true
+}
+
+//Updating lifecycle method
+getSnapshotBeforeUpdate(prevProps, prevState){
+    console.log("Lifecycle B getSnapShotBeforeUpdate method")
+    return null;
+}
+
+//Updating lifecycle method
+componentDidUpdate(){
+    console.log("Lifecycle b componentDidMount method");
+}
     render() {
         console.log("Lifecycle B render method")
         return (
