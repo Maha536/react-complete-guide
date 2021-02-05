@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PureComponent } from 'react';
 import './App.css';
 import ClassClick from './components/ClassClick';
 import Counter from './components/Counter';
@@ -18,6 +18,9 @@ import Form from './components/Form';
 import LifecycleA from './components/LifecycleA';
 import FragmentsDemo from './components/FragmentsDemo';
 import Table from './components/Table';
+import PureComp from './components/PureComp';
+import ParentComp from './components/ParentComp';
+import MemoComp from './components/MemoComp';
 
 
 class App extends Component {
@@ -25,10 +28,13 @@ class App extends Component {
     return (
       <div className="App">
         
+        <ParentComp/>
         
-        <Table/>
         
          {/*
+         <ParentComp/>
+         <PureComp/>
+         <Table/>
          <FragmentsDemo/>
          <LifecycleA/>
          <Form></Form>
