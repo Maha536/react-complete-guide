@@ -1,5 +1,14 @@
-import React, { Component, PureComponent } from 'react';
+import React, { Component } from 'react';
 import './App.css';
+import './appStyles.css';
+import ClickCounter2 from './components/ClickCounter2';
+import Counter2 from './components/Counter2';
+import HoverCounter2 from './components/HoverCounter2';
+import User from './components/User';
+/*
+import ClickCounter from './components/ClickCounter';
+import ErrorBoundary from './components/ErrorBoundary';
+import Hero from './components/Hero';
 import ClassClick from './components/ClassClick';
 import Counter from './components/Counter';
 import EventBind from './components/EventBind';
@@ -12,7 +21,7 @@ import UserGreeting from './components/UserGreeting';
 import Welcome from './components/Welcome';
 import StyleSheet from './components/StyleSheet';
 import Inline from './Inline';
-import './appStyles.css';
+
 import styles from './appStyles.module.css';
 import Form from './components/Form';
 import LifecycleA from './components/LifecycleA';
@@ -24,6 +33,7 @@ import MemoComp from './components/MemoComp';
 import RefsDemo from './components/RefsDemo';
 import FocusInput from './components/FocusInput';
 import FRParentInput from './components/FRParentInput';
+*/
 
 
 class App extends Component {
@@ -32,9 +42,26 @@ class App extends Component {
       <div className="App">
         
         <h1>Hello</h1>
-        <FRParentInput/>
-        
+        <Counter2>
+        {(count,incrementCount)=> <ClickCounter2 count={count} incrementCount={incrementCount}/>}
+        </Counter2>
+        <Counter2>
+          {(count,incrementCount)=> <HoverCounter2 count={count} incrementCount={incrementCount}/>}
+        </Counter2>
          {/*
+         <ClickCounter2/>
+        <HoverCounter2/>        
+        <User name={(isLoggedIn)=>isLoggedIn?'Hari':'Guest'}/>
+         <ErrorBoundary>
+          <Hero heroName='superman'/>
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero heroName='batman'/>
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero heroName='joker'/>
+        </ErrorBoundary>
+         <FRParentInput/>
          <FocusInput/>
          <RefsDemo/>
          <ParentComp/>
