@@ -9,4 +9,3 @@ function MemoComp({name}) {
     )
 }
 
-export default React.memo(MemoComp)

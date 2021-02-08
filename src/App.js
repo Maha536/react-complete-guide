@@ -21,6 +21,9 @@ import Table from './components/Table';
 import PureComp from './components/PureComp';
 import ParentComp from './components/ParentComp';
 import MemoComp from './components/MemoComp';
+import RefsDemo from './components/RefsDemo';
+import FocusInput from './components/FocusInput';
+import FRParentInput from './components/FRParentInput';
 
 
 class App extends Component {
@@ -28,10 +31,12 @@ class App extends Component {
     return (
       <div className="App">
         
-        <ParentComp/>
-        
+        <h1>Hello</h1>
+        <FRParentInput/>
         
          {/*
+         <FocusInput/>
+         <RefsDemo/>
          <ParentComp/>
          <PureComp/>
          <Table/>
